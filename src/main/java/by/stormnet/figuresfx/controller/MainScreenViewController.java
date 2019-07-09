@@ -9,6 +9,7 @@ import javafx.scene.paint.Color;
 
 
 import javafx.scene.input.MouseEvent;
+
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
@@ -51,16 +52,17 @@ public class MainScreenViewController implements Initializable {
                 figure = new Circle(x, y, random.nextInt(10), Color.GREEN, random.nextInt(50));
                 break;
             case Figure.FIGURES_TYPE_RECTANGLE:
-                figure = new Ractangle(x, y, random.nextInt(10), Color.BEIGE, random.nextInt(50));
+                figure = new Ractangle(x, y, random.nextInt(10), Color.DARKBLUE, random.nextInt(50));
                 break;
             case Figure.FIGURES_TYPE_TRIANGLE:
                 figure = new Triangle(x, y, random.nextInt(10), Color.YELLOW, random.nextInt(50));
                 break;
             case Figure.FIGURES_TYPE_HEART:
                 figure = new Heart(x, y, random.nextInt(10), Color.RED, random.nextInt(50));
-
+                break;
             case Figure.FIGURES_TYPE_CUBE:
                 figure = new Cube(x, y, random.nextInt(10), Color.PLUM, random.nextInt(50));
+                break;
             default:
                 System.out.println("Unknown");
         }
