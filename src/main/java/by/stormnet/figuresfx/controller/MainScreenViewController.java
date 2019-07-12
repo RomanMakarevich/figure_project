@@ -61,6 +61,7 @@ public class MainScreenViewController implements Initializable {
                 break;
             case Figure.FIGURES_TYPE_LITTER:
                 figure = new House(x, y, random.nextInt(3), Color.BLACK, random.nextInt(30));
+                logger.trace("House created");
                 break;
             default:
                 try {
