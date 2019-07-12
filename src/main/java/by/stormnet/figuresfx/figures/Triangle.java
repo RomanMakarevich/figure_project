@@ -34,14 +34,14 @@ public class Triangle extends Figure {
                 new double[]{
                         cx,
                         cx + lengthOfTheEdge / 2,
-                        cx - lengthOfTheEdge / 2},
+                        cx - lengthOfTheEdge / 2
+                },
                 new double[]{
                         cy - lengthOfTheEdge / 2,
                         cy + lengthOfTheEdge / 2,
-                        cy + lengthOfTheEdge / 2},
-
+                        cy + lengthOfTheEdge / 2
+                },
                 3);
-
     }
 
     @Override

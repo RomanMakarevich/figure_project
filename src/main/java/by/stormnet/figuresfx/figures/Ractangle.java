@@ -29,13 +29,13 @@ public class Ractangle extends Figure {
     public void draw(GraphicsContext gc) {
         gc.setLineWidth(lineWidth);
         gc.setStroke(color);
-        gc.strokeRect(cx -(width/2), cy - (width/2), width, width);
+        gc.strokeRect(cx - (width / 2), cy - (width / 2), width, width);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass())return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Ractangle ractangle = (Ractangle) o;
         return Double.compare(ractangle.width, width) == 0;
     }

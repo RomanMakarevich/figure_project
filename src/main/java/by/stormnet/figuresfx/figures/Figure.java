@@ -9,7 +9,7 @@ public abstract class Figure {
     public static final int FIGURES_TYPE_TRIANGLE = 2;
     public static final int FIGURES_TYPE_HEART = 3;
     public static final int FIGURES_TYPE_CUBE = 4;
-
+    public static final int FIGURES_TYPE_LITTER = 5;
 
     private int type;
 

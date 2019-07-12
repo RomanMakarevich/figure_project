@@ -31,11 +31,11 @@ public class Heart extends Figure {
         gc.setLineWidth(lineWidth);
         gc.setStroke(color);
         gc.strokeArc(cx - (cut * 3 + (cut / 3)), cy - (cut * 2 + (cut / 4)), cut * 3, cut * 3, 51, 167, ArcType.OPEN);
-        gc.strokeArc(cx + (cut/3.5) , cy - (cut * 2 + (cut / 5)), cut * 3, cut * 3, -35, 161, ArcType.OPEN);
-        gc.strokeLine(cx, cy - cut, cx - (cut - (cut/8)), cy - ((cut*2)-(cut/10)));
-        gc.strokeLine(cx, cy - cut, cx + (cut - (cut/8)), cy - ((cut*2)-(cut/10)));
-        gc.strokeLine(cx, cy + cut*3, cx - ((cut*3) ), cy + (cut/5.5));
-        gc.strokeLine(cx, cy + cut*3, cx + ((cut*3) ), cy + (cut/5.5));
+        gc.strokeArc(cx + (cut / 3.5), cy - (cut * 2 + (cut / 5)), cut * 3, cut * 3, -35, 161, ArcType.OPEN);
+        gc.strokeLine(cx, cy - cut, cx - (cut - (cut / 8)), cy - ((cut * 2) - (cut / 10)));
+        gc.strokeLine(cx, cy - cut, cx + (cut - (cut / 8)), cy - ((cut * 2) - (cut / 10)));
+        gc.strokeLine(cx, cy + cut * 3, cx - ((cut * 3)), cy + (cut / 5.5));
+        gc.strokeLine(cx, cy + cut * 3, cx + ((cut * 3)), cy + (cut / 5.5));
 
     }
 

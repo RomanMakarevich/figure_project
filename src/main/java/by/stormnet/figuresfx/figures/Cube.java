@@ -19,15 +19,15 @@ public class Cube extends Figure {
     public void draw(GraphicsContext gc) {
         gc.setLineWidth(lineWidth);
         gc.setStroke(color);
-        gc.strokeRect(cx, cy, cut*2, cut*2);
-        gc.strokeLine(cx , cy, cx - cut, cy - cut);
+        gc.strokeRect(cx, cy, cut * 2, cut * 2);
+        gc.strokeLine(cx, cy, cx - cut, cy - cut);
         gc.strokePolygon(new double[]{
                         cx - cut,
                         cx - cut,
                         cx,
                         cx + cut * 2,
                         cx + cut * 2,
-                        cx + cut,
+                        cx + cut
                 },
                 new double[]{
                         cy - cut,
@@ -35,7 +35,7 @@ public class Cube extends Figure {
                         cy + cut * 2,
                         cy + cut * 2,
                         cy,
-                        cy - cut,
+                        cy - cut
 
                 },
                 6);

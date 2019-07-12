@@ -17,26 +17,28 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-    private Circle(double cx, double cy, double lineWidth, Color color){
+    private Circle(double cx, double cy, double lineWidth, Color color) {
         super(FIGURES_TYPE_CITCLE, cx, cy, lineWidth, color);
     }
 
     public Circle(double cx, double cy, double lineWidth, Color color, double radius) {
-        this( cx, cy, lineWidth, color);
+        this(cx, cy, lineWidth, color);
         this.radius = radius;
     }
+
     @Override
     public void draw(GraphicsContext gc) {
         gc.setLineWidth(lineWidth);
-        gc.setStroke(color);;
-        gc.strokeOval(cx - radius, cy - radius, radius*2, radius*2);
+        gc.setStroke(color);
+        gc.strokeOval(cx - radius, cy - radius, radius * 2, radius * 2);
     }
+
     @Override
-    public boolean equals (Object o){
-       if (this == o) return true;
-       if (o == null || getClass() != o.getClass())return false;
-       Circle circle = (Circle) o;
-       return Double.compare(circle.radius, radius) == 0;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(circle.radius, radius) == 0;
     }
 
     @Override
