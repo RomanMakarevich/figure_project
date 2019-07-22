@@ -14,7 +14,7 @@ public class Triangle extends Figure {
 
     public Triangle(double cx, double cy, double lineWidth, Color color, double lengthOfTheEdge) {
         this(cx, cy, lineWidth, color);
-        this.lengthOfTheEdge = lengthOfTheEdge;
+        this.lengthOfTheEdge = lengthOfTheEdge< 20 ? 20 : lengthOfTheEdge;
     }
 
     public double getLengthOfTheEdge() {

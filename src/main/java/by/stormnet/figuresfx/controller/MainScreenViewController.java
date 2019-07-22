@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
 
@@ -20,7 +21,7 @@ public class MainScreenViewController implements Initializable {
     private static final Logger logger = Logger.getLogger(MainScreenViewController.class);
 
     private Random random;
-    private ArrayList<Figure> figures;
+    private List<Figure> figures;
     @FXML
     private Canvas canvas;
 
@@ -37,14 +38,14 @@ public class MainScreenViewController implements Initializable {
 
     private Figure createFigure(double x, double y) {
         Figure figure = null;
-
+        int number = 0;
         switch (random.nextInt(6)) {
             case Figure.FIGURES_TYPE_CITCLE:
                 figure = new Circle(x, y, random.nextInt(10), Color.GREEN, random.nextInt(50));
                 logger.trace("Circule created");
                 break;
             case Figure.FIGURES_TYPE_RECTANGLE:
-                figure = new Ractangle(x, y, random.nextInt(10), Color.DARKBLUE, random.nextInt(50));
+                figure = new Ractangle(x, y, random.nextInt(10), Color.DARKBLUE, random.nextInt(50) );
                 logger.trace("Rectangle created");
                 break;
             case Figure.FIGURES_TYPE_TRIANGLE:

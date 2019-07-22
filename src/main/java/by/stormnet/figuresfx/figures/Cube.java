@@ -12,7 +12,7 @@ public class Cube extends Figure {
 
     public Cube(double cx, double cy, double lineWidth, Color color, double cut) {
         this(cx, cy, lineWidth, color);
-        this.cut = cut;
+        this.cut = cut< 20 ? 20 : cut;
     }
 
     @Override

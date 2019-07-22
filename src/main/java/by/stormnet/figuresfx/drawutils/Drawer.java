@@ -1,6 +1,7 @@
 package by.stormnet.figuresfx.drawutils;
 
-import by.stormnet.figuresfx.controller.MainScreenViewController;
+
+import by.stormnet.figuresfx.figureException.NullFigureException;
 import by.stormnet.figuresfx.figures.Figure;
 import javafx.scene.canvas.GraphicsContext;
 import org.apache.log4j.Logger;
@@ -17,11 +18,14 @@ public class Drawer<T extends Figure> implements Drawable {
     @Override
     public void draw(GraphicsContext gc) {
         for (Figure figure : figures) {
-            if (figure == null){
-                logger.debug("Object = null");
-            }
             if (figure != null){
                 figure.draw(gc);
+            }else {
+                try {
+                    throw new NullFigureException("List is empty");
+                } catch (NullFigureException e) {
+                    e.getMessage();
+                }
             }
         }
     }

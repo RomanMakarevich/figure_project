@@ -15,7 +15,7 @@ public class House extends Figure {
 
     public House(double cx, double cy, double lineWidth, Color color, double cut) {
         this(cx, cy, lineWidth, color);
-        this.cut = cut;
+        this.cut = cut< 20 ? 20 : cut;
     }
 
     public double getCut() {

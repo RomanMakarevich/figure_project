@@ -22,7 +22,7 @@ public class Ractangle extends Figure {
 
     public Ractangle(double cx, double cy, double lineWidth, Color color, double width) {
         this(cx, cy, lineWidth, color);
-        this.width = width;
+        this.width = width< 20 ? 20 : width;
     }
 
     @Override
